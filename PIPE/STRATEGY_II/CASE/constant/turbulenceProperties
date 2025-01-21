@@ -1,0 +1,28 @@
+FoamFile
+{
+	version 2.0;
+	format binary;
+	class dictionary;
+	location "";
+	object turbulenceProperties;
+}
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+simulationType RAS;
+
+RAS
+{
+	RASModel SpalartAllmaras;
+
+	turbulence on;
+
+	printCoeffs on;
+
+        SpalartAllmarasCoeffs
+        {
+              Pr    1.000;
+              Prt   0.9;
+        }
+
+}

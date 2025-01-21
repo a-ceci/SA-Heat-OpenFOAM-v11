@@ -1,0 +1,15 @@
+FoamFile
+{
+	version 2.0;
+	format binary;
+	class dictionary;
+	location "";
+	object transportProperties;
+}
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+transportModel Newtonian;
+
+nu	[ 0 2 -1 0 0 0 0 ] 0.000045455 // nu = 2*R*u_b/Re_b
+;
